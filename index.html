@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <title>01F-GraphQL</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div id="loginFormContainer">
+      <form class="login-form" method="post">
+        <h1 class="formTitle">01F GraphQL Project</h1>
+        <input class="user-name" type="text" placeholder="Username" required />
+        <input
+          class="user-password"
+          type="password"
+          placeholder="Password"
+          required />
+        <input class="btn-sub" type="submit" value="Login" />
+        <p class="errorMsg">Please Enter Username and Password</p>
+      </form>
+    </div>
+
+    <button id="logoutButton" style="display: none">Logout</button>
+
+    <div id="userProfile">
+      <div class="user-details-container">
+        <div class="user-info">
+          <h1 id="userName"></h1>
+          <p id="userEmail"></p>
+          <p id="userPhoneNumber"></p>
+          <p id="userCampus"></p>
+        </div>
+        <div class="logo">
+          <img src="handstand_logo.webp" alt="logo" />
+        </div>
+      </div>
+      <div class="skills-container">
+        <h1 class="skills-header">Golang Piscine</h1>
+        <br />
+        <br />
+        <div id="graphSkillAmount"></div>
+      </div>
+      <div class="xp-container">
+        <h1 id="xpHeader">XP Points over Time</h1>
+        <br />
+        <div id="graphXpAmount"></div>
+      </div>
+      <div class="ratio-container">
+        <h1 id="ratioHeading">Audit Ratio:</h1>
+        <div id="auditRatioGraph"></div>
+
+        <div id="auditLineGraph"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+pink #f1abc9
+
+dark-gold #d9c47a
+
+blue #2393cd
+
+dark-blue #003561
+
+gradient between pink & blue
+
+background #fafafa
+
+line graph
+pink #fa4493
+blue #003561
